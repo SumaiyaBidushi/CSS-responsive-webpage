@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="cover">
+        <!-- <img class="img-cover" src="cover.jpg" alt=""> -->
+        <div class="nev-bar">
+            <div class="nev-logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav-link" id="nav-links">
+                <i class="fa fa-solid fa-close" onclick="CloseMenu()"></i>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Menu</li></a>
+                </ul>
+                <button type="button" class="btn">Sign Up</button>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="ShowMenu()"></i>
+        </div>
+        <div class="banner-tittle">
+            <h1>Lorem ipsum, <span>dolor sit<br> amet consectetur</span> adipisicing elit.</h1>
+            <button type="button" class="btn">Explore</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="srarch-icon">
+                <i class=" fa fa-solid fa-list"></i>
+                <i class="fa fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-brands fa-facebook"></i>
+                <i class="fa fa-brands fa-twitter"></i>
+                <i class="fa fa-brands fa-instagram"></i>
+                <i class="fa fa-brands fa-pinterest"></i>
+            </div>
+    </div>
+    <script>
+        var show = document.getElementById("nav-links");
+        function ShowMenu(){
+            show.style.right = "0";
+        }
+        function CloseMenu(){
+            show.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
